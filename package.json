@@ -38,6 +38,7 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "mongodb": "^3.5.9",
+    "mongodb-memory-server-core": "^6.6.1",
     "validator": "^13.1.1"
   }
 }
