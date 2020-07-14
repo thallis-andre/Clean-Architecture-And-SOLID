@@ -1,5 +1,5 @@
 import { MongoHelper } from './../helpers/mongo-helper'
-import { AccountMongoReporitory } from './account'
+import { AccountMongoRepository } from './account'
 
 describe('Account Mongo Repository', () => {
   beforeAll(async () => {
@@ -15,8 +15,8 @@ describe('Account Mongo Repository', () => {
     await accountCollection.deleteMany({})
   })
 
-  const makeSut = (): AccountMongoReporitory => {
-    return new AccountMongoReporitory()
+  const makeSut = (): AccountMongoRepository => {
+    return new AccountMongoRepository()
   }
 
   test('Should return an account on success', async () => {
