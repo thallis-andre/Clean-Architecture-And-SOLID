@@ -1,4 +1,4 @@
-import { AccountModel } from '../../domain/models/account'
+import { AccountModel } from '../../../domain/models/account'
 
 /* eslint-disable @typescript-eslint/method-signature-style */
 export interface LoadAccountByEmailRepository {
