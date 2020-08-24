@@ -13,11 +13,13 @@ services:
     build: .
     image: clean-node-api
     restart: always
-    command: npm start
+    command: npm run debug
     volumes:
       - ./dist:/usr/src/clean-node-api/dist # Eu faço esse monitoramento da minha pasta dist pq o docker-compose normalmente executa
                                             # uma imagem em cache, então mutas vezes ele não detecta todas minhas alterações
+      - ./package.json:/usr/src/clean-node-api/package.json
     ports:
       - "5050:5050"
+      - "9222:9222"
     links:
       - mongo
